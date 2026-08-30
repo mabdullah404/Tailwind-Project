@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nature-s-platter</title>
+
+    <title>Nature's Platter</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -13,47 +16,235 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <header class="bg-[#f1eee7]">
-      <nav class="grid grid-cols-3 gap-4 justify-center container mx-auto pt-4">
-        <img src="./assets/nav-logo.png" alt="" class="w-[120px] h-auto" />
 
-        <ul class="flex gap-4 items-center">
+  <body>
+
+    <!-- Navbar + Hero -->
+    <header class="bg-[#f1eee7] w-full">
+
+      <!-- Navbar -->
+      <nav
+        class="container mx-auto px-4 py-4
+        flex items-center justify-between"
+      >
+
+        <!-- Logo -->
+        <img
+          src="./assets/nav-logo.png"
+          alt="Nature's Platter"
+          class="w-[100px] md:w-[120px] h-auto"
+        />
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-6 items-center">
           <li><a href="">Product</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Contact</a></li>
         </ul>
 
-        <div class="flex gap-4 items-center">
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex gap-4 items-center">
+
           <i class="fa-solid fa-magnifying-glass"></i>
+
           <i class="fa-solid fa-cart-shopping"></i>
+
           <button
             class="rounded border border-green-500 font-semibold py-1 px-4"
           >
             Login
           </button>
+
           <button
             class="rounded border border-green-500 bg-green-500 font-semibold py-1 px-4"
           >
             Register
           </button>
+
         </div>
+
+        <!-- Mobile Menu Icon -->
+        <button class="md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
       </nav>
 
-      <section class="text-center">
 
-        <div class="max-w-[40%] mx-auto my-[20px] flex flex-col gap-8">
-          <h1 class="text-5xl font-semibold">
-            Freshness <span class="text-green-500">You Can <br> Count</span> On, Prices You’ll Love!
+      <!-- Hero Section -->
+      <section class="text-center pt-10">
+
+        <!-- Hero Text -->
+        <div
+          class="w-full max-w-3xl mx-auto px-4
+          flex flex-col gap-6"
+        >
+
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl
+            font-semibold leading-tight"
+          >
+            Freshness
+
+            <span class="text-green-500">
+              You Can Count
+            </span>
+
+            On, Prices You’ll Love!
           </h1>
-          <p>
-            Shop your daily essentials at unbeatable prices. From fresh produce
-            to pantry <br> staples, we’ve got you covered every day!
+
+
+          <p
+            class="text-sm md:text-base
+            max-w-xl mx-auto leading-6"
+          >
+            Shop your daily essentials at unbeatable prices.
+            From fresh produce to pantry staples, we’ve got
+            you covered every day!
           </p>
+
         </div>
 
-        <img src="./assets/Hero Section 1.png" alt="" class="mx-auto max-w-[800px]" />
+
+        <!-- Hero Image -->
+        <img
+          src="./assets/Hero Section 1.png"
+          alt="Fresh vegetables"
+          class="w-full max-w-[760px] h-auto
+          mx-auto mt-8 px-4 object-contain"
+        />
+
       </section>
+
     </header>
+
+
+
+    <!-- Services -->
+    <section
+      class="container mx-auto
+      px-4
+      my-20 md:my-[140px]"
+    >
+
+      <h2
+        class="text-green-500
+        text-4xl md:text-5xl
+        font-semibold
+        mb-10"
+      >
+        Services
+      </h2>
+
+
+      <!-- Service Cards -->
+      <div
+        class="flex flex-col
+        md:flex-row
+        gap-8"
+      >
+
+        <!-- Card 1 -->
+        <div
+          class="bg-[#f1eee7]
+          p-8 md:p-10
+          rounded
+          flex-1"
+        >
+
+          <div
+            class="flex items-center justify-center
+            bg-white rounded-full
+            w-[100px] h-[100px]
+            mx-auto p-4 mb-4"
+          >
+            <img src="./assets/service.png" alt="" />
+          </div>
+
+          <h2
+            class="font-semibold text-2xl
+            text-center mb-4"
+          >
+            24/7 Services
+          </h2>
+
+          <p class="text-center">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+          </p>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div
+          class="bg-[#f1eee7]
+          p-8 md:p-10
+          rounded
+          flex-1"
+        >
+
+          <div
+            class="flex items-center justify-center
+            bg-white rounded-full
+            w-[100px] h-[100px]
+            mx-auto p-4 mb-4"
+          >
+            <img src="./assets/delivery.png" alt="" />
+          </div>
+
+          <h2
+            class="font-semibold text-2xl
+            text-center mb-4"
+          >
+            Fast Delivery
+          </h2>
+
+          <p class="text-center">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+          </p>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div
+          class="bg-[#f1eee7]
+          p-8 md:p-10
+          rounded
+          flex-1"
+        >
+
+          <div
+            class="flex items-center justify-center
+            bg-white rounded-full
+            w-[100px] h-[100px]
+            mx-auto p-4 mb-4"
+          >
+            <img src="./assets/products.png" alt="" />
+          </div>
+
+          <h2
+            class="font-semibold text-2xl
+            text-center mb-4"
+          >
+            Healthy Products
+          </h2>
+
+          <p class="text-center">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </body>
 </html>
